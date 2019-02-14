@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "655093028942",
+    "firebase_url": "https://pictureposter-fefb5.firebaseio.com",
+    "project_id": "pictureposter-fefb5",
+    "storage_bucket": "pictureposter-fefb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655093028942:android:8c2ed4dbbe48b5eb",
+        "android_client_info": {
+          "package_name": "picture.poster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655093028942-o2q914ocicct5csb0l0n1mgsusmsi07l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGBhXDoOlxy6J-zoJvExYUXBro1hJ34As"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
