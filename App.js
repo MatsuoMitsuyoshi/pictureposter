@@ -17,12 +17,12 @@ import {
   Image,
 } from 'react-native';
 import RNImagePicker from "react-native-image-picker";
-import firebase from 'react-native-firebase';
+import Firebase from 'react-native-firebase';
 
 type Props = {};
 export default class App extends Component<Props> {
   state = {
-    uri: '',
+    uri: "",
   };
 
   // image picker
@@ -42,8 +42,15 @@ export default class App extends Component<Props> {
   // 画像のアップロード機能
   upload = () => {
     Firebase.storage()
-      .ref('images/' + new Date().getTime())
+      .ref("images/" + new Date().getTime())
       .putFile(this.state.uri, { contentType: "image/jpeg" })
+      // .then(({ downloadURL }) =>
+      //   Firebase.database()
+      //     .ref("images/" + new Date().getTime())
+      //     .set({
+      //       downloadURL
+      //     })
+      // )
       .then(() => alert("Uploaded"))
       .catch(e => {
         console.log(e);
